@@ -1,7 +1,7 @@
 [
   {
     "name": "Action button",
-    "url": "https://github.com/PekkaJalonen/grist-widget/actionbutton/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/actionbutton/index.html",
     "widgetId": "@gristlabs/widget-actionbutton",
     "published": true,
     "accessLevel": "full",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Calendar",
-    "url": "https://github.com/PekkaJalonen/grist-widget/calendar/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/calendar/index.html",
     "widgetId": "@gristlabs/widget-calendar",
     "published": true,
     "accessLevel": "full",
@@ -20,20 +20,20 @@
         "maxcdn.bootstrapcdn.com"
       ],
       "entrypoints": [
-        "https://github.com/PekkaJalonen/grist-widget/calendar/i18n/"
+        "https://pekkajalonen.github.io/grist-widget/calendar/i18n/"
       ]
     }
   },
   {
     "name": "Advanced Charts",
-    "url": "https://github.com/PekkaJalonen/grist-widget/chart/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/chart/index.html",
     "widgetId": "@gristlabs/widget-chart",
     "published": true,
     "accessLevel": "full"
   },
   {
     "name": "Copy to clipboard",
-    "url": "https://github.com/PekkaJalonen/grist-widget/clipboard/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/clipboard/index.html",
     "widgetId": "@gristlabs/widget-clipboard",
     "published": true,
     "accessLevel": "read table",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Dropbox Embedder",
-    "url": "https://github.com/PekkaJalonen/grist-widget/dropbox-embed/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/dropbox-embed/index.html",
     "widgetId": "@gristlabs/dropbox-embed",
     "published": true,
     "accessLevel": "read table",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Flashcards",
-    "url": "https://github.com/PekkaJalonen/grist-widget/flashcards/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/flashcards/index.html",
     "widgetId": "@gristlabs/flashcards",
     "published": true,
     "accessLevel": "read table",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Inspect Record",
-    "url": "https://github.com/PekkaJalonen/grist-widget/inspect/onRecord.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/inspect/onRecord.html",
     "widgetId": "@gristlabs/widget-inspect#onRecord",
     "published": true,
     "accessLevel": "read table",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Inspect Table",
-    "url": "https://github.com/PekkaJalonen/grist-widget/inspect/onRecords.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/inspect/onRecords.html",
     "widgetId": "@gristlabs/widget-inspect#onRecords",
     "published": true,
     "accessLevel": "read table",
@@ -73,21 +73,21 @@
   },
   {
     "name": "Inspect Options",
-    "url": "https://github.com/PekkaJalonen/grist-widget/inspect/onOptions.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/inspect/onOptions.html",
     "widgetId": "@gristlabs/widget-inspect#onOptions",
     "published": true,
     "renderAfterReady": true
   },
   {
     "name": "Inspect API",
-    "url": "https://github.com/PekkaJalonen/grist-widget/inspect/api.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/inspect/api.html",
     "widgetId": "@gristlabs/widget-inspect#api",
     "published": true,
     "renderAfterReady": true
   },
   {
     "name": "Invoices",
-    "url": "https://github.com/PekkaJalonen/grist-widget/invoices",
+    "url": "https://pekkajalonen.github.io/grist-widget/invoices",
     "widgetId": "@gristlabs/widget-invoices",
     "published": true,
     "accessLevel": "read table",
@@ -95,14 +95,14 @@
   },
   {
     "name": "JupyterLite Notebook",
-    "url": "https://github.com/PekkaJalonen/grist-widget/jupyterlite/lab/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/jupyterlite/lab/index.html",
     "widgetId": "@gristlabs/widget-jupyterlite",
     "published": true,
     "accessLevel": "read table"
   },
   {
     "name": "Map",
-    "url": "https://github.com/PekkaJalonen/grist-widget/map/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/map/index.html",
     "widgetId": "@gristlabs/widget-map#map",
     "published": true,
     "accessLevel": "read table",
@@ -110,7 +110,7 @@
   },
   {
     "name": "Markdown",
-    "url": "https://github.com/PekkaJalonen/grist-widget/markdown",
+    "url": "https://pekkajalonen.github.io/grist-widget/markdown",
     "widgetId": "@gristlabs/widget-markdown",
     "published": true,
     "accessLevel": "full",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Notepad",
-    "url": "https://github.com/PekkaJalonen/grist-widget/notepad",
+    "url": "https://pekkajalonen.github.io/grist-widget/notepad",
     "widgetId": "@gristlabs/widget-notepad",
     "published": true,
     "accessLevel": "full",
@@ -126,7 +126,7 @@
   },
   {
     "name": "Pivot Table",
-    "url": "https://github.com/PekkaJalonen/grist-widget/pivottable/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/pivottable/index.html",
     "widgetId": "@gristlabs/widget-pivottable",
     "published": true,
     "accessLevel": "read table",
@@ -134,7 +134,7 @@
   },
   {
     "name": "Print labels",
-    "url": "https://github.com/PekkaJalonen/grist-widget/printlabels/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/printlabels/index.html",
     "widgetId": "@gristlabs/widget-printlabels",
     "published": true,
     "accessLevel": "read table",
@@ -142,7 +142,7 @@
   },
   {
     "name": "Purchase orders",
-    "url": "https://github.com/PekkaJalonen/grist-widget/purchase-orders",
+    "url": "https://pekkajalonen.github.io/grist-widget/purchase-orders",
     "widgetId": "@gristlabs/widget-purchase-orders",
     "published": true,
     "accessLevel": "read table",
@@ -150,7 +150,7 @@
   },
   {
     "name": "QR Code",
-    "url": "https://github.com/PekkaJalonen/grist-widget/qrcode/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/qrcode/index.html",
     "widgetId": "@gristlabs/widget-qrcode",
     "published": true,
     "accessLevel": "read table",
@@ -158,7 +158,7 @@
   },
   {
     "name": "HTML viewer",
-    "url": "https://github.com/PekkaJalonen/grist-widget/renderhtml/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/renderhtml/index.html",
     "widgetId": "@gristlabs/widget-renderhtml",
     "published": true,
     "accessLevel": "read table",
@@ -166,7 +166,7 @@
   },
   {
     "name": "Grist Video Player",
-    "url": "https://github.com/PekkaJalonen/grist-widget/rendervideo/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/rendervideo/index.html",
     "widgetId": "@gristlabs/widget-rendervideo",
     "published": true,
     "accessLevel": "read table",
@@ -174,7 +174,7 @@
   },
   {
     "name": "Image viewer",
-    "url": "https://github.com/PekkaJalonen/grist-widget/viewer/index.html",
+    "url": "https://pekkajalonen.github.io/grist-widget/viewer/index.html",
     "widgetId": "@gristlabs/widget-viewer",
     "published": true,
     "accessLevel": "read table",
