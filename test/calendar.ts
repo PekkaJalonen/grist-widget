@@ -201,9 +201,19 @@ describe('calendar', function () {
     // find a way to mock a date both in the system (by using TimeShift) and in the TUI Calendar to get rid of this
     // data builder here.
     const monthNameOf = (date: Date) => date.toLocaleString('en-us', {month: 'long', year: 'numeric'});
-    const shiftMonth = (date: Date, months: number) => {
+    const shiftMonth = (date: Date, months: 1 | -1) => {
       const newDate = new Date(date);
-      newDate.setMonth(date.getMonth() + months);
+      newDate.setDate(1);
+      const currentMonth = date.getMonth();
+      if (currentMonth === 0 && months === -1) {
+        newDate.setMonth(11);
+        newDate.setFullYear(newDate.getFullYear() - 1);
+      } else if (currentMonth === 11 && months === 1) {
+        newDate.setMonth(0);
+        newDate.setFullYear(newDate.getFullYear() + 1);
+      } else {
+        newDate.setMonth(currentMonth + months);
+      }
       return newDate;
     };
     const now = new Date(Date.now());
@@ -245,7 +255,6 @@ describe('calendar', function () {
     await grist.waitForFrame();
 
     await createCalendarEvent(12, 'Test1');
-    await grist.waitForServer();
     await grist.waitToPass(async () => {
       assert.equal(await eventsCount(), 1);
     });
@@ -303,6 +312,22 @@ describe('calendar', function () {
     });
     await grist.undo(4); // Revert both changes to the view and events.
     await grist.undo(1);
+  });
+
+  it("should show Record Card popup on double click", async function () {
+    await createCalendarEvent(18, 'TestRecordCard');
+    await grist.inCustomWidget(async () => {
+      const event = driver.findContentWait('.toastui-calendar-weekday-event-title', /TestRecordCard/, 1000);
+      await driver.withActions(a => a.doubleClick(event));
+    });
+    assert.isTrue(await driver.findWait('.test-record-card-popup-overlay', 1000).isDisplayed());
+    assert.equal(
+      await driver.find('.test-record-card-popup-wrapper .test-widget-title-text').getText(),
+      'TABLE1 Card'
+    );
+    assert.isTrue(await driver.findContent('.g_record_detail_value', 'TestRecordCard').isPresent());
+    await driver.sendKeys(Key.ESCAPE);
+    assert.isFalse(await driver.find('.test-record-card-popup-overlay').isPresent());
   });
 
   //Helpers
